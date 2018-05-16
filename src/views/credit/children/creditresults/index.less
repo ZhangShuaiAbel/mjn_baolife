@@ -1,0 +1,49 @@
+@import '../../../../less/core.less';
+
+.credit_results {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .results_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        color: @font_default_color;
+        font-size: 34/@s;
+        letter-spacing: 5/@s; 
+        margin-bottom: 140/@s;
+
+        &_icon {
+            width: 120/@s;
+            height: 154/@s;
+            background: url('../../../../assets/images/hourglass.png') center center;
+            background-size: cover;
+            margin: 100/@s 0/@s 48/@s 0/@s;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    .results_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 626/@s;
+        height: 60/@s;
+        background: @back_active_color;
+        color: #fff;
+        font-size: 32/@s;
+        border-radius: 6/@s;
+    }
+}

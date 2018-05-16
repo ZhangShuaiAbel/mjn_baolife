@@ -1,0 +1,172 @@
+@import '../../less/core.less';
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: @back_default_color;
+    .card-con{
+        width:100%;
+        height: auto;
+        padding: 0 30/@s;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        background:#ffffff;
+        .card-con-left{
+            width: 280/@s;
+            height: 100/@s;  
+            line-height: 100/@s;
+            font-size: 28/@s;         
+        }
+        .card-con-right{
+            flex: 1;
+            height: 100/@s;
+            .input{
+                margin-top: 30/@s;
+                display: block;
+                width: 100%;
+                height: 40/@s;
+                font-size: 28/@s;
+                line-height: 40/@s;              
+                border:none;
+                outline:none;
+                padding: 0;
+            }
+            input::-webkit-input-placeholder{
+                color: #d2d2d2;
+                font-size: 28/@s;
+            }
+            .address{
+                width: 100%;
+                font-size: 28/@s;
+                line-height: 100/@s;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .address-mo{
+                width: 100%;
+                font-size: 28/@s;
+                line-height: 100/@s;
+                color: #d2d2d2;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        }
+        .sao{
+            display: flex;
+            flex-direction: row;
+            .sao-card-input{
+                flex: 1;
+            }
+            .sao-card-img{
+                width: 50/@s;
+                height: 50/@s;
+                margin: 25/@s 0;
+                box-sizing: border-box;
+                background:url("../../assets/images/sao-crad.jpg") no-repeat center;
+                background-size: 100% 100%;
+            }
+        }
+        .padding-box{
+            padding-left: 16/@s;
+            box-sizing: border-box;
+        }
+    }
+    .card-con:first-child{
+        margin-top: 30/@s;
+    }
+    .btn{
+        width: 100%;
+        height: auto;
+        padding: 40/@s 60/@s 60/@s 60/@s;
+        box-sizing: border-box;
+        button{
+            display: block;
+            width: 100%;
+            height: 100/@s;
+            border: none;
+            background-color: #c84847;
+            font-size: 30/@s;
+            color:#ffffff;
+            border-radius: 8/@s;
+            outline:none; 
+        }
+    }
+    p{
+        width: 100%;
+        height: 32/@s;
+        line-height: 32/@s;
+        font-size: 28/@s;
+        text-align: center;
+        span{
+            display: inline-block;
+            color: #feb810;
+            font-size: 28/@s;
+        }
+    }
+    .city{
+        height: 800/@s;
+        width: 100%;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        font-size: 32/@s;
+        .city-header{
+            width: 100%;
+            height: 88/@s;
+            font-size: 32/@s;
+            line-height: 88/@s;
+            padding-left: 30/@s;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #dcdcdc;
+            span{
+              width: auto;
+              margin-right: 30/@s;
+              color: #c84847;
+            }
+        }
+        .city-content{
+            flex: 1;
+            overflow: scroll;
+            font-size: 32/@s !important;
+            li{ 
+                width: 100%;
+                font-size: 32/@s !important;
+                padding-left: 30/@s;
+                margin-top:50/@s; 
+                box-sizing: border-box;
+            }
+        }
+      }
+    .validation{
+        position: fixed;
+        width: 100%;
+        bottom: 180/@s;
+        text-align: center;
+        font-size: 220/@s;        
+        line-height: 0;
+        z-index: 101;
+        .container{
+            display: inline-block;
+            background: #FFEBBB;
+            border: 1px solid #C7AC8C;
+            color: #6E5336;
+            height: 50/@s;
+            padding: 025/@s;
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px 1px #C7C7C7;
+            font-size: 24/@s;
+        }
+    }
+    
+}
+.wrap {
+    width: 100%;
+    height: 100%;    
+}
+
+
+

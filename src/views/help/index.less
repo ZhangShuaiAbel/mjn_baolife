@@ -1,0 +1,195 @@
+@import '../../less/core.less';
+
+.service {
+    width: 100%;
+    height: 100%;
+    //background: @back_default_color;
+    .scroll_wrap {
+        height: 100%;
+        flex: 1;
+      }
+      .scroll_center {
+        width: 100%;
+      }
+        
+}
+.head{
+    height: 202/@s;
+    display: flex;
+    flex-direction: row;
+    position: relative
+}
+.head .head_list{
+    flex: 1;
+}
+.head .head_list p{
+    text-align: center;
+    font-size:28/@s; 
+}
+.head .head_list a{
+    color: @font_default_color;
+    width: 100%;
+    height: 100%;
+}
+.open_iphone{
+    width: 80%;
+    height: 290/@s;
+    background: #fff;
+    overflow: hidden;
+    border-radius:5px ;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: -145/@s;
+
+}
+.open_iphone p:first-child{
+    padding: 75/@s 0;
+    text-align: center;
+    font-size: 40/@s;
+}
+.open_iphone p:last-child{
+    height:90/@s;
+    line-height: 90/@s;
+    text-align: center;
+    font-size: 28/@s;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid @border_default_color;
+}
+.open_iphone p:last-child a{
+    flex: 1;
+    color: @font_default_color;
+}
+.open_iphone p:last-child a:last-child{
+    border-left: 1px solid @border_default_color;
+    color: @border_active_color;
+
+}
+.head .head_list:first-child span{
+    width: 68/@s;
+    height: 62/@s;
+    display: block;
+    background: url(../../assets/images/iphone1.png) no-repeat;
+    background-size:58/@s 56/@s;
+    margin: 50/@s auto 20/@s;
+}
+.head .head_list:nth-child(2) span{
+    width: 68/@s;
+    height: 62/@s;
+    display: block;
+    background: url(../../assets/images/iphone2.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 50/@s auto 20/@s;
+}
+.head .border{
+    width: 1px;
+    height: 60/@s;
+    background: #d7d7d7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30/@s;
+}
+.container{
+    width: 100%;
+  }
+  .container .title{
+    width: 100%;
+    font-size: 30/@s;
+    padding:  @size_padding;
+    background-color: #f3f3f3;
+  }
+
+  .container .title span:first-child{
+      width: 6/@s;
+      height: 30/@s;
+      display: inline-block;
+      background: @border_active_color;
+      vertical-align: middle;
+      border-radius: 6px;
+  }
+  .container .title span:last-child{
+   padding-left: 6/@s;
+   font-size: 30/@s
+}
+  
+  .container ul{
+    width: 100%;
+  }
+  .container li{
+    border-bottom: 1px solid #d7d7d7;
+
+  }
+  .container li p{
+    font-size: 28/@s;
+    background: url(../../assets/images/bt_right.png) no-repeat right @size_padding center;
+    background-size: 14/@s;
+    padding:  @size_padding;
+  }
+  .container li .title_list{
+    background: url(../../assets/images/bt_top.png) no-repeat right @size_padding center;
+    background-size: 26/@s;
+
+  }
+//   .container li p.title{
+//     width: 100%;
+//     line-height: 60px;
+//     font-size: 18px;
+//     color: #000;
+//   }
+  
+//   .container li p.active{
+//     color: #f00;
+//   }
+//   .container li div{
+//       height: 200px;
+//   }
+  .container li .content{
+    display: none;
+    padding: 10px;
+    box-sizing:border-box;
+    font-size: 28/@s;
+    line-height: 30/@s;
+    padding:  @size_padding;
+
+  }
+  
+  .container li div.active{
+    display: block;
+    -webkit-transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+    height: inherit; 
+    width: inherit;
+    
+  }
+  #tabPanel {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#tabPanel .item .sildermun ul li {
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+}
+
+#tabPanel .item .sildermun ul li:hover {
+    background: #ccc;
+}
+
+#tabPanel .item .menutitle {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ccc;
+}
+
+#tabPanel .item .sildermun {
+    text-align: center;
+    background: #eee;
+}
+

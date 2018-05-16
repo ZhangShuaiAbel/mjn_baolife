@@ -1,0 +1,169 @@
+@import '../../../../less/core.less';
+
+.release {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 50/@s;
+    height: 100%;
+    background: @back_default_color;
+    .scroll_wrap {
+        height: 100%;
+        flex: 1;
+        padding-top: 190/@s;
+      }
+    
+      .scroll_center {
+        width: 100%;
+      }
+    .release-pro{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column; 
+        border-bottom: 1px solid #dcdcdc; 
+        z-index: 99; 
+        position: fixed !important;
+        top: 0;       
+        .release_list{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            padding: 34/@s 30/@s;
+            margin-top: 20/@s;
+            background: #ffffff;
+
+                     
+            .release_left{
+                width: 120/@s;
+                height: 90/@s;
+                background-size: 100% 100% !important;
+                margin-right: @size_padding;
+                margin-top: 20/@s;
+                // img{
+                //     display: block;
+                //     width: 108/@s;
+                //     height: auto;
+                // }
+            }
+            .release_center{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    height: 53/@s;
+                    line-height: 53/@s;
+                    box-sizing: border-box;
+                    font-size: 28/@s;
+                    color: #0c0c0c;
+                }
+                p{
+                    height: 53/@s;
+                    line-height: 53/@s;
+                    box-sizing: border-box;  
+                    font-size: 28/@s;  
+                    color: @font_default_color;  
+                    margin-left: -12/@s;  
+                    margin-top: 20/@s; 
+                    span{
+                        font-size: 32/@s; 
+                        color: #d93836;
+                    }                
+                }
+            }
+            .release_right{
+                width: 126/@s;
+                h3{
+                    box-sizing: border-box;
+                    font-size: 32/@s;
+                    color: #0c0c0c;
+                    text-align: right;
+                    font-size:28/@s;
+                }
+                p{
+                    width: 124/@s;
+                    color: @font_active_color;
+                    border: 1px solid @font_active_color;
+                    height: 42/@s;
+                    line-height:42/@s;
+                    text-align: center;
+                    font-size: 22/@s;
+                    border-radius: 10px;
+                    margin-top:36/@s;
+                }
+            }
+        }
+    }
+    .release-img1{
+        background:url(../../../../assets/images/tiao_one.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    .release-msg{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        .release-msg-aside-right{
+            flex: 1;
+            border-bottom: 1px solid #dcdcdc;
+            padding-top: 40/@s;
+        }
+        .release-msg-aside{
+            width: 100/@s;
+            height:140/@s;
+            box-sizing: border-box;
+            background:url(../../../../assets/images/tiao_one.png) no-repeat top center;
+            background-size: auto;
+            background-position-y: 0.5rem;
+        }
+        .release-msg-aside1{
+            width: 100/@s;
+            height:140/@s;
+            box-sizing: border-box;
+            background:url(../../../../assets/images/tiao_two.png) no-repeat top center;
+            background-size: auto;
+        }
+        .release-msg-center{
+            flex: 1;
+            height: auto;
+            .center-box{
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                display: flex;
+                
+                p{
+                    font-size: 28/@s;
+                    color: #999999;
+                    height: 32/@s;
+                }
+                .box-p-one{
+                    margin-bottom: 4/@s;
+                }
+                .box-p-two{
+                    margin-bottom: 30/@s;
+                }
+                .box-p-left{
+                    margin-left: -12/@s;
+                }
+                span{
+                    display: block;
+                    font-size: 24/@s;
+                    color: #999999;                    
+                }
+            }
+            .center-box:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;    
+}
+
+
+
+
+

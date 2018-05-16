@@ -1,0 +1,63 @@
+@import '../../../../less/core.less';
+.register {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  justify-content: space-around;
+    font-size: 50/@s;
+    background: url("../../../../assets/images/invitation_bj.png") center center;
+    background-size: 100% 100%;
+    .top{width: 100%;
+      flex: 1;
+    }
+    .bottom{
+      width: 600/@s;
+      height: 500/@s;
+      background: rgba(255, 255, 255, 0.5)!important;
+  filter: Alpha(opacity=50);
+      border-radius: 12/@s;
+      .btn1{
+          width: 360/@s;
+          height: 88/@s;
+          margin: 0 auto;
+        background: url("../../../../assets/images/register_btn.png") center center;
+        background-size: 100% 100%;
+      }
+    }
+    ul{
+        padding-top: 40/@s;
+        padding: 40/@s 30/@s 0 30/@s;
+    }
+    ul li{
+      background: #fff;
+      border-radius: 10/@s;
+      overflow: hidden;
+      margin-bottom: 30/@s;
+      height: 80/@s;
+      position: relative;
+      .code-btn{
+        color: #fbc747; 
+        font-size: 26/@s; 
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 10/@s;
+        height: 80/@s;
+      }
+      input{
+          border: none;
+          padding: 0 20/@s;
+          font-size: 32/@s;
+      }
+    }
+    .invitation_text{
+        font-size: 26/@s;
+        margin: 24/@s 0;
+        color: #fff;
+        a{
+           color: #fbc747; 
+        }
+    }
+  }
+

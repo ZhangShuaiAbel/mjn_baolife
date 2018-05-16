@@ -1,0 +1,1 @@
+export const baseUrl = '//img13.360buyimg.com/n1/';

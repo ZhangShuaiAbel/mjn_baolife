@@ -1,0 +1,143 @@
+@import '../../less/core.less';
+
+.release {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 50/@s;
+    background: @back_default_color;
+    .release-pro{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column; 
+        border-bottom: 1px solid #dcdcdc;         
+        .release_list{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            padding: 34/@s 30/@s;
+            margin-top: 20/@s;
+            background: #ffffff;
+
+                     
+            .release_left{
+                width: 108/@s;
+                height: 133/@s;
+                border: 1px solid @back_default_color;
+                background-size:contain!important;
+                background-repeat: no-repeat!important;
+                margin-right:@size_padding;
+                // img{
+                //     display: block;
+                //     width: 108/@s;
+                //     height: auto;
+                // }
+            }
+            .release_center{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    height: 53/@s;
+                    line-height: 53/@s;
+                    box-sizing: border-box;
+                    font-size: 28/@s;
+                    color: #0c0c0c;
+                }
+                p{
+                    height: 53/@s;
+                    line-height: 53/@s;
+                    box-sizing: border-box;  
+                    font-size: 28/@s;  
+                    color: @font_default_color;  
+                    margin-left: -12/@s;  
+                    margin-top: 20/@s; 
+                    span{
+                        font-size: 32/@s; 
+                        color: #d93836;
+                    }                
+                }
+            }
+            .release_right{
+                width: 126/@s;
+                h3{
+                    box-sizing: border-box;
+                    font-size: 32/@s;
+                    color: #0c0c0c;
+                    text-align: right;
+                    font-size:28/@s;
+                }
+                p{
+                    width: 124/@s;
+                    color: @font_active_color;
+                    border: 1px solid @font_active_color;
+                    height: 42/@s;
+                    line-height:42/@s;
+                    text-align: center;
+                    font-size: 22/@s;
+                    border-radius: 10px;
+                    margin-top:36/@s;
+                }
+            }
+        }
+    }
+    .release-msg{
+        display: flex;
+        flex-direction: row;
+        .release-msg-aside{
+            width: 72/@s;
+            height: auto;
+            padding-top: 44/@s;
+            box-sizing: border-box;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 17.4/@s;
+                height: auto;
+            }
+        }
+        .release-msg-center{
+            flex: 1;
+            height: auto;
+            .center-box{
+                width: 100%;
+                margin-top: 40/@s;
+                height: auto;
+                border-bottom: 1px solid #dcdcdc;
+                padding-bottom: 40/@s;
+                box-sizing: border-box;
+                p{
+                    font-size: 28/@s;
+                    color: #999999;
+                    height: 32/@s;
+                }
+                .box-p-one{
+                    margin-bottom: 4/@s;
+                }
+                .box-p-two{
+                    margin-bottom: 30/@s;
+                }
+                .box-p-left{
+                    margin-left: -12/@s;
+                }
+                span{
+                    display: block;
+                    font-size: 24/@s;
+                    color: #999999;                    
+                }
+            }
+            .center-box:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;    
+}
+
+
+

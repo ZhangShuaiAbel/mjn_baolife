@@ -1,0 +1,68 @@
+@import '../../../../less/core';
+
+.service {
+    width: 100%;
+    padding: @size_padding;
+    font-size: 20/@s;
+    line-height: 40/@s;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    .release_success{
+        margin: 130/@s 0;
+
+
+        &_img{
+            width: 168/@s;
+            height: 168/@s;
+            display: block;
+            margin:0 auto 40/@s;
+            background:url(../../../../assets/images/success.png) no-repeat center;
+            background-size: 100% 100%;
+        }
+        &_text{
+            font-size: 32/@s;
+            color: @font_default_color;
+            line-height: 50/@s;
+            text-align: center;
+        }
+    }
+    .recommend{
+        flex:1;
+        h3{
+            text-align: center;
+            color: @font_default_color;
+            font-size: 28/@s;
+           
+        }
+        &_img{
+            width: 100%;
+            ul li{
+                width: 330/@s;
+                height: 232/@s;
+                background-size: cover !important;
+                float: left;
+                margin-top: 40/@s;
+            }
+
+        }
+        h3:before{
+            content: "";
+            width: 270/@s;
+            display: inline-block;
+            height: 1px;
+            border:1px solid @border_default_color;
+            float: left;
+            margin-top: 20/@s;
+        }
+        h3:after{
+            content: "";
+            width: 270/@s;
+            display: inline-block;
+            height: 1px;
+            border:1px solid @border_default_color;
+            float: right;
+            margin-top: 20/@s;
+        }
+    }
+}
